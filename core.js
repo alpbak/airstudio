@@ -157,7 +157,7 @@ $f.addPlugin("ipad",function(t){var L=-1;var u=0;var v=1;var J=2;var z=3;var F=4
 		fpAnalyticsID:	"UA-24634724-1",
 		foreground:		"/pub/css/img/headerFg.png",
 		hoverMsg:		"Video abspielen",
-		staticPath:     "http://digicopter.de/",
+		staticPath:     "http://topmodels-airstudio.com/",
 		enableTracking: true,
 		showNavi:       true
 	};

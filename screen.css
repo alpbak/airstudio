@@ -234,7 +234,6 @@ a {
 
 #headWrap h1#logo {
 	height: 230px;
-	background: url(img/header.jpg) no-repeat top center;
 	margin: 0;
 	position: relative;
 }
@@ -359,7 +358,6 @@ h1#logo a {
 }
 
 #contentWrap {
-	background: url(img/bg_content.jpg);
 	padding: 40px 0;
 	overflow: hidden;
 	color: #5e5e5e;
@@ -741,21 +739,14 @@ footer .csc-default {
 	display: block;
 }
 
-#languageSelectorEn {
-	background: url(img/flag_en_n.png) no-repeat;
-}
 
 #languageSelectorEn.active {
-	background: url(img/flag_en_a.png) no-repeat;
+	
 	display: block;
 }
 
-#languageSelectorDe {
-	background: url(img/flag_de_n.png) no-repeat;
-}
 
 #languageSelectorDe.active {
-	background: url(img/flag_de_a.png) no-repeat;
 	display: block;
 }
 
@@ -1174,7 +1165,6 @@ footer .csc-default {
 #footer {
 	width: 930px;
 	height: 100px;
-	background: url(img/bgFooter.jpg) no-repeat 4px 0;
 	text-align: center;
 }
 
