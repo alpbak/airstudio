@@ -30,7 +30,21 @@ $(document).ready(function(){
     }, 500);
     
 
+/*	if iPhone | iPad
+	checkiPhone(), checkiPad() unten
+**************************************************/
 
+	jQuery(function() {
+		iPhone=checkiPhone();
+		iPad=checkiPad();
+		
+		iPadOS4=checkiPadOS4();
+		iPhoneOS4=checkiPhoneOS4();
+		iPhone3G=checkiPhone3G();
+	});
+	
+	$('iframe:nth-child(3n)').css('margin-right','0');
+	$('#sidebarRight #news .simpleNewsList li:last-child').addClass('lastchild');
 
 	
 /*	Listen halbieren
