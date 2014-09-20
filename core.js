@@ -148,7 +148,7 @@ $f.addPlugin("ipad",function(t){var L=-1;var u=0;var v=1;var J=2;var z=3;var F=4
 		speed:			700,
 		sliderSpeed:	700,
 		fadeSpeed:		500,
-		delay:			8000,
+		delay:			5000,
 		width:			880,
 		height:			200,
 		videoHeight:	495,
@@ -176,9 +176,9 @@ $f.addPlugin("ipad",function(t){var L=-1;var u=0;var v=1;var J=2;var z=3;var F=4
 		play:		null,
 		backup:		null,
 		// iPhone / iPad Abfrage
-		iPhone:		false,
-		iPad:		false,
-		viimeo:		false
+		iPhone:		true,
+		iPad:		true,
+		viimeo:		true
 	};
 
 
