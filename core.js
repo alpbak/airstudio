@@ -165,7 +165,7 @@ $f.addPlugin("ipad",function(t){var L=-1;var u=0;var v=1;var J=2;var z=3;var F=4
 	var private = {
 		turning:	false,
 		interval:	-1,
-		// HTML Struktur
+		// HTML Struktur //
 		wrap:		null,
 		player:		null,
 		video:		null,
