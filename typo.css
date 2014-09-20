@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+h1 {
+	font-size: 320%;
+	font-weight: normal;
+	font-family: 'Oswald', sans-serif;
+}
+
+h2 {
+	font-size: 250%;
+	font-weight: normal;
+	font-family: 'Oswald', sans-serif;
+}
+
+h3 {
+	font-size: 200%;
+	font-weight: normal;
+	font-family: 'Oswald', sans-serif;
+}
+
+h4 {
+	font-size: 200%;
+	font-weight: normal;
+	font-family: 'Oswald', sans-serif;
+}
+
+input, textarea, select {
+	border: 1px solid #777;
+	border-bottom: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+}
+
+p {
+	margin: 0 0 15px 0;
+}
+
+.csc-downloadBox {
+	border: 1px solid #eee;
+	padding: 10px;
+}
+
+.fileDesc {
+	display: block;
+	padding: 5px;
+	margin: 10px 0 0 0;
+	font-style: italic;
+	background: #f4f4f4;
+}

@@ -1,0 +1,173 @@
+/* Text mit Bildern
+************************************************/
+
+/* Nowrap right (Bild rechts, Text daneben OHNE Umbruch unter das Bild)
+
+-> MUSS ANGEPASST WERDEN!
+*/
+.textboxNowrapRight .csc-textpic-text {
+	margin-right: 220px;
+}
+
+.textboxNowrapRight .textboxImage {
+	float: right;
+	width: 200px;
+}
+
+
+/* Nowrap left (Bild links, Text daneben OHNE Umbruch unter das Bild)
+
+-> MUSS ANGEPASST WERDEN!
+*/
+.textboxNowrapLeft .csc-textpic-text {
+	margin-left: 220px;
+}
+
+.textboxNowrapLeft div.csc-textpic-imagewrap {
+	float: left;
+	width: 200px;
+}
+
+
+
+/* Top center style */
+div.textboxAboveCenter {
+	text-align: left;
+}
+
+div.textboxAboveCenter .csc-textpic-imagewrap {
+	margin: 0 auto;
+}
+
+
+/* Top right style */
+div.textboxAboveRight {
+}
+
+div.textboxAboveRight .csc-textpic-imagewrap {
+	float: right;
+}
+
+
+/* Bottom right style */
+div.textboxBelowCenter {
+	text-align: left;
+}
+
+div.textboxBelowCenter .csc-textpic-imagewrap {
+	margin: 0 auto;
+}
+
+
+/* Bottom right style */
+div.textboxBelowRight {
+}
+
+div.textboxBelowRight .csc-textpic-imagewrap {
+	float: right;
+}
+
+
+/* Intext right */
+.textboxInnerRight {
+	clear: both;
+}
+
+.textboxInnerRight .textboxImage {
+	float: right;
+	margin: 0 15px 15px 0;
+}
+
+
+/* Intext left */
+.textboxInnerLeft {
+	clear: both;
+}
+
+.textboxInnerLeft .textboxImage {
+	float: left;
+	margin: 0 15px 15px 0;
+}
+
+.imageCaption {
+	display: block;
+	clear: both;
+	font-size: 90%;
+	font-style: italic;
+}
+
+.imageWithCaption, .textboxImage {
+	padding: 0;
+	margin: 0;
+	line-height: 90%;
+}
+
+
+
+
+/* clearfix
+************************************************/
+
+.noMargin { margin-bottom: 0 !important; }
+.noMarginTop { margin-top: 0 !important; }
+.noMarginRight { margin-right: 0 !important; }
+.marginTop { margin-top: 2em; }
+
+.L {
+	float: left;
+	margin-right: 1em;
+}
+
+.R {
+	float: right;
+	margin-left: 1em;
+}
+
+.clear { clear: both; }
+
+#sidebarRight p.L { width: 80px; margin-right: 10px; }
+#sidebarRight p.L input.form { width: 70px; }
+#sidebarRight p.L select.form { width: 75px; }
+
+/* Clearfix-Methode zum Clearen der Float-Umgebungen */
+.clearfix:after {
+   content: ".";
+   display: block;
+   height: 0;
+   clear: both;
+   visibility: hidden;
+}
+
+/* Diese Angabe benötigt der Safari-Browser zwingend !! */
+.clearfix { display: inline-block; }
+
+/* Hides from IE-mac \*/
+* html .clearfix {	height: 1%; }
+
+.clearfix { display: block; }
+/* End hide from IE-mac */
+
+
+
+/* Accordion */
+.theAccordion h3 {
+	cursor: pointer;
+	background: #eee;
+	padding: 4px 6px;
+	margin: 0 0 10px 0;
+}
+
+
+
+
+
+/*****************/
+/** QapTcha CSS **/
+/*****************/
+.QapTcha {float:left;margin-top:10px;width:252px;}
+.QapTcha .clr{clear:both}
+.QapTcha .bgSlider {width:252px;height:37px;float:left;border:1px solid #040404;background-color:#ddd;}
+.QapTcha .Slider {width:52px;height:37px;background:transparent url('img/bg_draggable_qaptcha.jpg') no-repeat;cursor:e-resize;position:relative;top:0;left:0}
+.QapTcha .TxtStatus {width:252px;margin-top:7px;text-align:left;color:#bb2828;font-family:Verdana;font-size:10px;clear:both}
+.QapTcha .dropSuccess {color:#4e8b37}
+.QapTcha .dropError {color:#bb2828}
