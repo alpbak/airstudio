@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>jQuery lightbox clone - prettyPhoto - by Stephane Caron</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js" type="text/javascript"></script>
+<!--script src="http://www.topmodels-airstudio.com/wixvideo/js/jquery.lint.js" type="text/javascript" charset="utf-8"></script-->
+<link rel="stylesheet" href="http://b594454ec2e35b27a5fd29b07f8864f4d87096ee.googledrive.com/host/0B_Cn7gvzHGKQekY5SzZhQU9pSGM/Video-Gallerry/css/prettyPhoto.css" type="text/css" media="screen" title="prettyPhoto main stylesheet" charset="utf-8" />
+<script src="http://b594454ec2e35b27a5fd29b07f8864f4d87096ee.googledrive.com/host/0B_Cn7gvzHGKQekY5SzZhQU9pSGM/Video-Gallerry/js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
+
+<style type="text/css" media="screen">
+* { margin: 0; padding: 0; }
+
+body {
+font: 62.5%/1.2 Arial, Verdana, Sans-Serif;
+padding: 20px 20px;
+}
+
+h1 { font-family: Georgia; font-style: italic; margin-bottom: 10px; }
+
+h2 {
+font-family: Georgia;
+font-style: italic;
+margin: 25px 0 5px 0;
+}
+
+p { font-size: 1.2em; }
+
+ul li { display: inline-block; padding:2px;}
+
+.wide {
+border-bottom: 20px #000 solid;
+width: 4000px;
+}
+
+.fleft { float: left; margin: 0 20px 0 0; }
+
+.cboth { clear: both; }
+
+#main {
+background: #fff;
+margin: 0 auto;
+padding: 30px;
+width: 1000px;
+}
+.a1{
+position: relative;
+height:20px;
+top: -50px;
+background-color: #000000;
+padding:5px;
+opacity:0.6;
+}
+
+.a2{
+position: relative;
+left:5px;
+top: 4px;
+color:#FFFFFF;
+font-size:12px;
+}
+
+#background {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-image: url('images/background.jpg');
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: 100%;
+opacity: 1;
+filter:alpha(opacity=99);
+}
+</style>
+</head>
+<body>
+<div id="background">
+<ul class="gallery clearfix"></ul>
+
+<ul class="gallery clearfix">
+
+
+<!-- Youtube Linki:******
+
+<li><a href="http://www.youtube.com/watch?v=kh29_SERH0Y?rel=0&width=900&height=500" rel="prettyPhoto" title="YouTube demo"><img src="http://http://b594454ec2e35b27a5fd29b07f8864f4d87096ee.googledrive.com/host/0B_Cn7gvzHGKQekY5SzZhQU9pSGM/Video-Gallerry/video.jpg"/></a></li>
+
+-->
+
+
+<!--Ninja2-->
+
+<li><a href="http://vimeo.com/106675818&width=900&height=500" rel="prettyPhoto" title="Vimeo video"><img src="http://static.wixstatic.com/media/e2d67a_a828698c462a4b3fbe0383d0f8a0e991.jpg_400" /></a><div class="a1"><div class="a2">Ninja Warrior Türkiye İkinci Fragmanı</div></div></li>
+
+
+<!--Ninja-->
+
+<li><a href="http://www.youtube.com/watch?v=q9DMhIs_InU?rel=0&width=900&height=500" rel="prettyPhoto" title="YouTube demo"><img src="http://static.wixstatic.com/media/e2d67a_e91e2daa7993495eb2de635a80ccb915.jpg_400"/></a><div class="a1"><div class="a2">Ninja Warrior Türkiye Fragmanı</div></div></li>
+
+
+<!--UlanIstanbul-->
+
+
+<li><a href="http://vimeo.com/105138776&width=900&height=500" rel="prettyPhoto" title="Vimeo video"><img src="http://static.wixstatic.com/media/e2d67a_2b7e5c0dbf7542fa95b16b0fa9119db7.jpg_400" /></a><div class="a1"><div class="a2">Ulan İstanbul 11.Bölüm Kürek Yarışları</div></div></li>
+
+
+
+<!--StajyerMafya-->
+
+
+<li><a href="http://vimeo.com/103698652&width=900&height=500" rel="prettyPhoto" title="Vimeo video"><img src="http://static.wixstatic.com/media/e2d67a_7d0a8fd1b41247de954f7b4f3b8f9991.jpg_400" /></a><div class="a1"><div class="a2">Stajyer Mafya Fragman</div></div></li>
+
+
+
+<!--GüzelKöylü-->
+
+
+<li><a href="http://vimeo.com/102219629&width=900&height=500" rel="prettyPhoto" title="Vimeo video"><img src="http://static.wixstatic.com/media/e2d67a_2542c6272927492cb8190a7c9d339e6b.jpg_400" /></a><div class="a1"><div class="a2">Güzel Köylü 1.Bölüm Bisiklet Sahnesi</div></div></li>
+
+<!--Afad-->
+
+
+<li><a href="http://vimeo.com/100638063&width=900&height=500" rel="prettyPhoto" title="Vimeo video"><img src="http://static.wixstatic.com/media/e2d67a_f51b38d3ee694b9d9a8d0865faac68f9.jpg_400" /></a><div class="a1"><div class="a2">AFAD Tırları Ve AFAD Deposu</div></div></li>
+
+<!--Manej-->
+
+<li><a href="http://vimeo.com/96058719&width=900&height=500" rel="prettyPhoto" title="Vimeo video"><img src="http://static.wixstatic.com/media/e2d67a_d3d92ebdea2f42dfaf8785cc6090fbd2.jpg_400" /></a><div class="a1"><div class="a2">Kapalı Manejde Binicilik</div></div></li>
+
+<!--İstanbulLines-->
+
+<li><a href="http://vimeo.com/102243114&width=900&height=500" rel="prettyPhoto" title="Vimeo video"><img src="http://static.wixstatic.com/media/e2d67a_f70b6e430216429faab68c347ca00a38.jpg_400" /></a><div class="a1"><div class="a2">İstanbul Lines Roro Gemisi</div></div></li>
+
+<!--ÖndenAraba-->
+
+<li><a href="http://vimeo.com/95429256&width=900&height=500" rel="prettyPhoto" title="Vimeo video"><img src="http://static.wixstatic.com/media/e2d67a_c3f77495de9f4186a0e596e671904cb1.jpg_400" /></a><div class="a1"><div class="a2">Önden Araba Takibi</div></div></li>
+
+
+<!--Edge540-->
+
+<li><a href="http://vimeo.com/102229921&width=900&height=500" rel="prettyPhoto" title="Vimeo video"><img src="http://static.wixstatic.com/media/e2d67a_7eb3bfde63e94432a5640eaf75d6b635.jpg_400" /></a><div class="a1"><div class="a2">Edge 540 Klibi</div></div></li>
+
+<!--ArabaVeKameraArkası-->
+
+<li><a href="http://vimeo.com/102395397&width=900&height=500" rel="prettyPhoto" title="Vimeo video"><img src="http://static.wixstatic.com/media/e2d67a_e9992a48aec04b0db59c78a7bb83df18.jpg_400" /></a><div class="a1"><div class="a2">Önden Araba Takibi Ve Kamera Arkası</div></div></li>
+
+
+
+
+
+</ul>
+
+<script type="text/javascript" charset="utf-8">
+$(document).ready(function(){
+$("area[rel^='prettyPhoto']").prettyPhoto();
+
+$(".gallery:first a[rel^='prettyPhoto']").prettyPhoto({animation_speed:'normal',theme:'light_square',slideshow:3000, autoplay_slideshow: true});
+$(".gallery:gt(0) a[rel^='prettyPhoto']").prettyPhoto({animation_speed:'fast',slideshow:10000, hideflash: true});
+
+$("#custom_content a[rel^='prettyPhoto']:first").prettyPhoto({
+custom_markup: '<div id="map_canvas" style="width:260px; height:265px"></div>',
+changepicturecallback: function(){ initialize(); }
+});
+
+$("#custom_content a[rel^='prettyPhoto']:last").prettyPhoto({
+custom_markup: '<div id="bsap_1259344" class="bsarocks bsap_d49a0984d0f377271ccbf01a33f2b6d6"></div><div id="bsap_1237859" class="bsarocks bsap_d49a0984d0f377271ccbf01a33f2b6d6" style="height:260px"></div><div id="bsap_1251710" class="bsarocks bsap_d49a0984d0f377271ccbf01a33f2b6d6"></div>',
+changepicturecallback: function(){ _bsap.exec(); }
+});
+});
+</script>
+
+</div>
+
+</body>
+</html>
+
