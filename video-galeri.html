@@ -95,12 +95,14 @@ filter:alpha(opacity=99);
 
 <!--Reaksiyon 6.Bölüm Fragman-->
 
+
 <li><a href="http://vimeo.com/109999279&width=900&height=500" rel="prettyPhoto" title="Vimeo video"><img src="http://static.wixstatic.com/media/e2d67a_f0f6e16cf7f94481b082660d0d374e59.jpg_400" /></a><div class="a1"><div class="a2">Reaksiyon Dizisi Altıncı Bölüm Fragmanı</div></div></li>
 
+<li><a href="http://vimeo.com/109935669&width=900&height=500" target="_parent" rel="prettyPhoto" title="Vimeo video"><img src="http://static.wixstatic.com/media/e2d67a_f0f6e16cf7f94481b082660d0d374e59.jpg_400" /></a><div class="a1"><div class="a2">Reaksiyon Dizisi Altıncı Bölüm Fragmanı</div></div></li>
 
 <!--Reaksiyon-->
 
-<li><a href="http://vimeo.com/108942989&width=900&height=500" rel="prettyPhoto" title="Vimeo video"><img src="http://static.wixstatic.com/media/e2d67a_c6362982c54449f4878dd32af21a194a.jpg_400" /></a><div class="a1"><div class="a2">Reaksiyon Dizisi Hava Çekimleri</div></div></li>
+<li><a href="http://vimeo.com/108942989&width=900&height=500" target="_blank" rel="prettyPhoto" title="Vimeo video"><img src="http://static.wixstatic.com/media/e2d67a_c6362982c54449f4878dd32af21a194a.jpg_400" /></a><div class="a1"><div class="a2">Reaksiyon Dizisi Hava Çekimleri</div></div></li>
 
 <!--GüzelKöylü-->
 
@@ -192,7 +194,7 @@ $(document).ready(function(){
 
 
 $(".gallery:first a[rel^='prettyPhoto']").prettyPhoto({animation_speed:'normal',theme:'light_square',slideshow:3000, autoplay_slideshow: true});
-$(".gallery:gt(0) a[rel^='prettyPhoto']").prettyPhoto({animation_speed:'fast',slideshow:10000, hideflash: true});
+$(".gallery:gt(0) a[rel^='prettyPhoto']").prettyPhoto({overlay_gallery: true, show_title: false, animation_speed:'normal',slideshow:10000, hideflash: true,theme:'light_square', overlay_gallery: true});
 
 $("#custom_content a[rel^='prettyPhoto']:first").prettyPhoto({
 custom_markup: '<div id="map_canvas" style="width:260px; height:265px"></div>',
